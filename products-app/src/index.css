@@ -1,0 +1,126 @@
+body {
+    padding: 0em;
+    margin: 0em;
+    background-color: rgba(208, 231, 250, 0.864);
+}
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex-col-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+.flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-start {
+    justify-content: start;
+}
+.p-0 {
+    padding: 0;
+}
+.p-1 {
+    padding: 1em;
+}
+.p-2  {
+    padding: 2em;
+}
+.p-3 {
+    padding: 3em;
+}
+.p-0-1 {
+    padding: 0em 1em;
+}
+.p-0-2  {
+    padding: 0em 2em;
+}
+.p-0-3 {
+    padding: 0em 3em;
+}
+.m-0 {
+    margin: 0em;
+}
+.m-1 {
+    margin: 1em;
+}
+.m-2  {
+    margin: 2em;
+}
+.m-3 {
+    margin: 3em;
+}
+.m-0-1 {
+    margin: 0em 1em;
+}
+.m-0-2  {
+    margin: 0em 2em;
+}
+.m-0-3 {
+    margin: 0em 3em;
+}
+.m-1-0 {
+    margin: 1em 0em;
+}
+.m-2-0  {
+    margin: 2em 0em;
+}
+.m-3-0 {
+    margin: 3em 0em;
+}
+
+.color-w {
+    color: white;
+}
+.deco-none {
+    text-decoration: none;
+}
+.gap-1 {
+    gap: 1em;
+}
+.gap-2 {
+    gap: 2em;
+}
+.gap-3 {
+    gap: 3em;
+}
+.l-style-none {
+    list-style: none;
+}
+.border-1 {
+    border: 1px solid black;
+}
+.border-2 {
+    border: 2px solid black;
+}
+.border-3 {
+    border: 3px solid black;
+}

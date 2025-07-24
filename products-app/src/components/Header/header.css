@@ -1,0 +1,20 @@
+.mainHeader {
+    background-image: linear-gradient(to bottom, rgb(2, 59, 109) 10%,rgba(208, 231, 250, 0.864));
+}
+header {
+    background-color: rgba(214, 214, 214, 0.242);
+}
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.heroSect {
+    height: 25em;
+    width: 100%;
+}
+.heroSect h1 {
+    font-size: 5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(254, 254, 254);
+}

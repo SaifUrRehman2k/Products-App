@@ -1,0 +1,14 @@
+.buyNow {
+    width: 100%;
+    padding: 0.4em;
+    background-color: rgb(2, 59, 109);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.buyNow:hover {
+    background-color: rgba(2, 59, 109, 0.577);
+    cursor: pointer;
+
+}

@@ -1,0 +1,9 @@
+footer {
+    background-color: rgb(2, 59, 109);
+    * {
+        text-align: center;
+    }
+}
+footer h1.logo {
+    margin: 1em 0em 0em 0em;
+}
