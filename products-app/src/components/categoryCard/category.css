@@ -1,0 +1,37 @@
+.Tech,
+.Fashion,
+.Jewelry {
+    width: 30%;
+    height: 15em;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5em;
+}
+
+.Fashion {
+    background-color: rgb(0, 103, 2);
+    background-image: url(../../assets/images/Fashion.jpg);
+
+}
+
+.Jewelry {
+    background-color: rgb(201, 123, 5);
+    background-image: url(../../assets/images/Jewelry.jpg);
+
+}
+
+.Tech {
+    background-color: rgb(5, 79, 190);
+    background-image: url(../../assets/images/Tech.jpg);
+
+}
+#categoryContent {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    h1 {
+        text-shadow: 2px 1px 12px var(--white1), -2px -1px 12px var(--white1);
+    }
+}

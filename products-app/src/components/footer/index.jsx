@@ -10,6 +10,7 @@ const Footer = (props) => {
                 <a href="#" className='l-style-none color-w'>{e}</a>
             </li>
         ))}</ul>
+        
     </footer>
   )
 }
