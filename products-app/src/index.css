@@ -11,7 +11,7 @@ body {
 
 :root {
     --fontColor1: rgb(32, 32, 32);
-    --white1: rgb(217, 217, 217);
+    --white1: rgb(244, 242, 242);
     --bgColor1: rgb(3, 143, 231);
     --bgColor2: rgba(2, 106, 181, 0.741);
 }
@@ -57,6 +57,22 @@ a {
 
 .align-start {
     align-items: start;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+.align-self-end {
+    align-self: end;
 }
 
 .justify-center {
@@ -207,11 +223,25 @@ a {
     border: 3px solid black;
 }
 
+.d-block {
+    display: block !important;
+}
+
+.d-none {
+    display: none;
+}
+
 .elipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.menu,.close:hover {
+    fill: rgb(107, 106, 106);
+    cursor: pointer;
+}
+
 
 #sideBar {
     top: 0px;
@@ -271,9 +301,22 @@ a {
     .categories {
         box-sizing: border-box;
     }
+
     .productsLibrary {
         align-items: center;
         justify-content: center;
+    }
+
+    header .myAcc svg.menu {
+        padding: 0 !important;
+        width: 24px !important;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 850px) {
+    header svg.menu {
+        display: none;
     }
 }
 
@@ -292,8 +335,15 @@ a {
     .Fashion {
         margin: 0% !important;
     }
+    .myAcc .iconLink {
+
+        .loginLink {
+            display: none;
+        }
+    }
 }
-@media (max-width: 600px)  {
+
+@media (max-width: 600px) {
     .cardVertical {
         width: 45% !important;
         margin: 0.1em 0.3em 3em 0.3em !important;
@@ -301,26 +351,28 @@ a {
         gap: 0.5em;
     }
 }
+
 @media (max-width: 500px) {
     * {
         box-sizing: border-box !important;
     }
+
     .cardVertical .btns .buyNow {
         font-size: 0.5em;
         height: 100% !important;
         align-self: center;
     }
+
     header {
-        padding: 0em 0.4em!important;
+        padding: 0em 0.4em !important;
     }
-    .myAcc .iconLink{
+
+    .myAcc .iconLink {
         margin: 0.5em 0.2em;
-        .loginLink {
-            display: none;
-        }
     }
 }
-@media (max-width: 300px)  {
+
+@media (max-width: 300px) {
     footer ul li a {
         font-size: 0.7em;
     }

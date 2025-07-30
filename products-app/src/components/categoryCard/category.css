@@ -12,19 +12,19 @@
 
 .Fashion {
     background-color: rgb(0, 103, 2);
-    background-image: url(../../assets/images/Fashion.jpg);
+    background-image: url(../../assets/images/Fashion.webp);
 
 }
 
 .Jewelry {
     background-color: rgb(201, 123, 5);
-    background-image: url(../../assets/images/Jewelry.jpg);
+    background-image: url(../../assets/images/Jewelry.webp);
 
 }
 
 .Tech {
     background-color: rgb(5, 79, 190);
-    background-image: url(../../assets/images/Tech.jpg);
+    background-image: url(../../assets/images/Tech.webp);
 
 }
 #categoryContent {
