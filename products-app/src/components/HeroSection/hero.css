@@ -1,0 +1,33 @@
+.heroImages {
+    position: relative;
+    height: 80%;
+}
+.heroSect h1 {
+    line-height: 1em;
+}
+
+.heroImages {
+    img[alt="image0"] {
+        aspect-ratio: 4/3 !important;
+        width: 20em !important;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    img[alt="image1"] {
+        aspect-ratio: 3/4 !important;
+        width: 8em;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    img[alt="image2"] {
+        aspect-ratio: 4/3 !important;
+        width: 12em;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}

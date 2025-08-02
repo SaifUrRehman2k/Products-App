@@ -24,36 +24,6 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-.heroImages {
-    position: relative;
-    height: 80%;
-}
-
-.heroImages {
-    img[alt="image1"] {
-        aspect-ratio: 4/3 !important;
-        width: 20em !important;
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-    }
-
-    img[alt="image2"] {
-        aspect-ratio: 3/4 !important;
-        width: 8em;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-    }
-
-    img[alt="image3"] {
-        aspect-ratio: 4/3 !important;
-        width: 12em;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-}
 
 .heroSect h1 {
     font-size: 3em;
@@ -66,20 +36,37 @@
     text-shadow: 0px 4px 4px rgba(158, 197, 255, 0.727);
 }
 
+.myAcc {
+    gap: 4px;
+}
+
 .iconLink {
     color: rgb(42, 41, 41);
     width: max-content;
     box-sizing: border-box !important;
-    gap: 4px;
-    padding: 0.4em 0.2em;
+    gap: 2px;
+    padding: 0em 0.6em;
 
-    a {
+    p.loginLink {
         color: var(--fontColor1) !important;
-        font-size: 0.8em;
-
+        line-height: 1em;
+        margin: 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
     }
 
     svg {
         fill: var(--fontColor1);
+        height: 1.2em;
+        align-self: end;
+    }
+}
+.iconLink:hover {
+    cursor: pointer;
+    p.loginLink {
+        color: var(--fontColor2) !important;
+    }
+    svg {
+        fill: var(--fontColor2) !important;
     }
 }

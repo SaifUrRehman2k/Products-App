@@ -11,6 +11,7 @@ body {
 
 :root {
     --fontColor1: rgb(32, 32, 32);
+    --fontColor2: rgba(55, 55, 55, 0.933);
     --white1: rgb(244, 242, 242);
     --bgColor1: rgb(3, 143, 231);
     --bgColor2: rgba(2, 106, 181, 0.741);
@@ -134,7 +135,17 @@ a {
 .p-0-3 {
     padding: 0em 3em;
 }
+.p-1-0 {
+    padding: 1em 0em;
+}
 
+.p-2-0 {
+    padding: 2em 0em;
+}
+
+.p-3-0 {
+    padding: 3em 0em;
+}
 .m-0 {
     margin: 0em;
 }
@@ -226,7 +237,14 @@ a {
 .d-block {
     display: block !important;
 }
-
+.mainHeading {
+    font-size: 3em;
+    color: var(--fontColor1);
+    background-color: var(--bgColor2);
+    padding: 0.5em;
+    margin: 0%;
+    width: 100%;
+}
 .d-none {
     display: none;
 }
@@ -241,7 +259,11 @@ a {
     fill: rgb(107, 106, 106);
     cursor: pointer;
 }
-
+.iconLink {
+    svg {
+        fill: var(--fontColor2);
+    }
+}
 
 #sideBar {
     top: 0px;

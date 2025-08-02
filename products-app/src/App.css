@@ -1,0 +1,15 @@
+.personalInfo {
+    height: 16em;
+    border-top: 1px solid rgba(106, 105, 105, 0.733);
+}
+.myDetailsDiv  {
+    height: 50em !important;
+}
+.accWindow {
+    align-self: flex-start;
+}
+.personalInfo small {
+    font-size: 0.7em;
+    color: var(--fontColor2);
+    line-height: 1.8em;
+}

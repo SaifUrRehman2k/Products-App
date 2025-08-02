@@ -1,0 +1,9 @@
+.LeftSideBar{
+    height: 100%;
+    width: 35%;
+    border-top: 1px solid rgba(172, 171, 171, 0.732);
+    border-right: 1px solid rgba(172, 171, 171, 0.732);
+}
+.LeftSideBar ul {
+    padding-left: 0;
+}

@@ -4,30 +4,38 @@ import Footer from './components/footer'
 import Header from './components/Header'
 import { Route, Routes } from 'react-router'
 import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact/contact'
 import Cart from './Pages/Cart/index.jsx'
 import Blog from './Pages/Blog/index.jsx'
-
+import Account from './Pages/Account/index.jsx'
+import Details from './Pages/Account/DashboardPages/Details.jsx'
+import Orders from './Pages/Account/DashboardPages/Orders.jsx'
+import Reviews from './Pages/Account/DashboardPages/Reviews.jsx'
+import Returns from './Pages/Account/DashboardPages/Returns.jsx'
+import Settings from './Pages/Account/DashboardPages/Settings.jsx'
 
 function App() {
-  const navLinks = ['Home', 'About', 'Contact', 'Cart']
 
 
   return (
     <>
-      <Header nav={navLinks} logo='DealKart' />
+      <Header logo='DealKart' />
       
       <Routes>
         <Route index element={<Home/>}/>
-        <Route path='about' element={<About/>}/>
-        <Route path='contact' element={<Contact />}/>
         <Route path='cart' element={<Cart/>}/>
         <Route path='blog' element={<Blog/>}/>
+        <Route path='myAccount' element={<Account/>}>
+          <Route path='my-details' element={<Details/>}/>
+          <Route path='my-orders' element={<Orders/>}/>
+          <Route path='my-reviews' element={<Reviews/>}/>
+          <Route path='my-returns' element={<Returns/>}/>
+          <Route path='settings' element={<Settings/>}/>
+
+        </Route>
 
       </Routes>
       
-      <Footer links={navLinks} logo='DealKart' />
+      <Footer logo='DealKart' />
 
       
     </>
