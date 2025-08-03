@@ -13,3 +13,9 @@
     color: var(--fontColor2);
     line-height: 1.8em;
 }
+.accPage{
+    gap: 0em;
+    div.leftSideBarToggle {
+        align-self: start;
+    }
+} 

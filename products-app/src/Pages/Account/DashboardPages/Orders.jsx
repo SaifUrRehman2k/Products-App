@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 const Orders = () => {
   return (
-    <div>
+    <div className='dashBoardContent'>
       <h1>Orders</h1>
       <div className='flex-col-wrap align-center justify-center p-3'>
         <h2>There are no orders you have made</h2>

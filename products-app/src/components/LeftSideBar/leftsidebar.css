@@ -3,7 +3,23 @@
     width: 35%;
     border-top: 1px solid rgba(172, 171, 171, 0.732);
     border-right: 1px solid rgba(172, 171, 171, 0.732);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    transition-property: all;
 }
 .LeftSideBar ul {
     padding-left: 0;
+}
+div.leftSideBarToggle {
+    padding: 0.2em;
+    position: absolute;
+    left: 13em;
+    top: 10em;
+    background-color: var(--bgColor1);
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    svg.iconLink{
+        padding: 0em;
+        fill: rgb(219, 216, 216);
+    }
 }

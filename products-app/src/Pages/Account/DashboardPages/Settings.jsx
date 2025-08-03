@@ -3,7 +3,7 @@ import List from '../../../components/List'
 
 const Settings = () => {
   return (
-    <div>
+    <div className='dashBoardContent'>
       <h1>Account Settings</h1>
       <List/>
     </div>

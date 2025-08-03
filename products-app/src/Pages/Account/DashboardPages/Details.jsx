@@ -3,7 +3,7 @@ import Button from '../../../components/button'
 
 const Details = () => {
   return (
-    <div className='myDetailsDiv'>
+    <div className='myDetailsDiv dashBoardContent'>
       <h1>Details</h1>
       <h3>Personal Information</h3>
       <div className="personalInfo flex-row-nowrap align-start justify-around m-2-0 w-100 gap-2 p-2-0">

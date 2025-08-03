@@ -135,6 +135,7 @@ a {
 .p-0-3 {
     padding: 0em 3em;
 }
+
 .p-1-0 {
     padding: 1em 0em;
 }
@@ -146,6 +147,7 @@ a {
 .p-3-0 {
     padding: 3em 0em;
 }
+
 .m-0 {
     margin: 0em;
 }
@@ -237,6 +239,7 @@ a {
 .d-block {
     display: block !important;
 }
+
 .mainHeading {
     font-size: 3em;
     color: var(--fontColor1);
@@ -245,8 +248,13 @@ a {
     margin: 0%;
     width: 100%;
 }
+
 .d-none {
     display: none;
+}
+
+.left-0 {
+    left: 0px !important;
 }
 
 .elipsis {
@@ -255,43 +263,19 @@ a {
     text-overflow: ellipsis;
 }
 
-.menu,.close:hover {
+.menu,
+.close:hover {
     fill: rgb(107, 106, 106);
     cursor: pointer;
 }
+
 .iconLink {
     svg {
         fill: var(--fontColor2);
     }
 }
 
-#sideBar {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    background-color: var(--bgColor2);
-    z-index: 999;
-    display: none;
 
-    div.glassSide {
-        height: 100%;
-        backdrop-filter: blur(10px);
-    }
-}
-
-#sideBar ul {
-    height: 50%;
-
-    li {
-        width: 100% !important;
-        padding: 1em 0em;
-    }
-
-    li a {
-        font-size: 1.5em;
-        color: white;
-    }
-}
 
 @media (max-width: 850px) {
 
@@ -329,16 +313,11 @@ a {
         justify-content: center;
     }
 
-    header .myAcc svg.menu {
-        padding: 0 !important;
-        width: 24px !important;
-        display: inline-block;
-    }
 }
 
-@media (min-width: 850px) {
-    header svg.menu {
-        display: none;
+@media (min-width: 600px) {
+    div.leftSideBarToggle {
+        display: none !important;
     }
 }
 
@@ -357,13 +336,40 @@ a {
     .Fashion {
         margin: 0% !important;
     }
+
+    .myAcc {
+        gap: 0em !important;
+    }
+
     .myAcc .iconLink {
+        padding: 0.2em;
 
         .loginLink {
             display: none;
         }
     }
+
+    .LeftSideBar {
+        position: fixed;
+        top: 0;
+        left: -13em;
+        z-index: 999;
+        background-color: var(--bgColor1);
+        padding: 1em;
+        width: 13em !important;
+    }
+
+    header .myAcc div.leftSideBarToggle {
+        padding: 0 !important;
+        width: 24px !important;
+        display: inline-block;
+    }
+
+    .accWindow {
+        margin: 0em;
+    }
 }
+
 
 @media (max-width: 600px) {
     .cardVertical {
@@ -371,6 +377,18 @@ a {
         margin: 0.1em 0.3em 3em 0.3em !important;
         height: max-content !important;
         gap: 0.5em;
+    }
+
+    .personalInfo {
+        flex-flow: column-reverse;
+        height: 20em !important;
+        small {
+            width: 100% !important;
+        }
+    }
+    .dashBoardContent {
+        width: 90%;
+        margin: 1em auto;
     }
 }
 

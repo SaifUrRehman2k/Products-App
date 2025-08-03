@@ -5,10 +5,7 @@ import { Link } from 'react-router'
 
 
 const Header = (props) => {
-  const [showSidebar, setShowSidebar] = useState(false)
-  const handleClick = () => {
-    setShowSidebar(!showSidebar);
-  };
+  
 
   return (
     <div className='mainHeader'>
@@ -29,7 +26,6 @@ const Header = (props) => {
 
 
         <div className='myAcc flex-row-nowrap align-center justify-center'>
-          <svg className='menu iconLink' onClick={handleClick} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2e2e2eff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
 
           <Link to={'/'} style={{borderRight: "1px solid rgba(113, 113, 113, 0.807)",}} className="iconLink  flex-row-nowrap align-center justify-center m-0 p-0-1">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#262627ff"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>

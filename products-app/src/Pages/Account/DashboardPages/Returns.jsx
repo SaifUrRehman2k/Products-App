@@ -2,7 +2,7 @@ import React from 'react'
 
 const Returns = () => {
   return (
-    <div>
+    <div className='dashBoardContent'>
       <h1>Returns</h1>
     </div>
   )
