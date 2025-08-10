@@ -1,0 +1,39 @@
+.productWindow {
+    height: 50em;
+}
+.imgContainer {
+    height: 100% !important;
+    width: 100% !important;
+    border: 1px solid rgb(140, 140, 140);
+    padding: 1em;
+    box-sizing: border-box;
+}
+.mainProductData {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+}
+
+
+.mainProductData .imgContainer img {
+    width: 20em;
+    aspect-ratio: 1/1 !important;
+}
+
+.productInfo {
+    height: 100% !important;
+}
+.productMainDetails {
+    p {
+        font-size: 0.8em;
+        color: var(--fontColor1);
+    }
+    b {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    small {
+        font-size: 0.7em;
+        color: var(--fontColor2);
+    }
+}

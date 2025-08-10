@@ -12,6 +12,7 @@ import Orders from './Pages/Account/DashboardPages/Orders.jsx'
 import Reviews from './Pages/Account/DashboardPages/Reviews.jsx'
 import Returns from './Pages/Account/DashboardPages/Returns.jsx'
 import Settings from './Pages/Account/DashboardPages/Settings.jsx'
+import Product from './Pages/Home/ProductPages/index.jsx'
 
 function App() {
 
@@ -22,16 +23,17 @@ function App() {
       
       <Routes>
         <Route index element={<Home/>}/>
-        <Route path='cart' element={<Cart/>}/>
-        <Route path='blog' element={<Blog/>}/>
-        <Route path='myAccount' element={<Account/>}>
+        <Route path='product/:id' element={<Product/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/myAccount' element={<Account/>}>
           <Route path='my-details' element={<Details/>}/>
           <Route path='my-orders' element={<Orders/>}/>
           <Route path='my-reviews' element={<Reviews/>}/>
           <Route path='my-returns' element={<Returns/>}/>
           <Route path='settings' element={<Settings/>}/>
-
         </Route>
+        <Route path=''/>
 
       </Routes>
       

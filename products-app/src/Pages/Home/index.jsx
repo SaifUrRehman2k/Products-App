@@ -6,6 +6,7 @@ import image1 from '../../assets/images/image1.webp'
 import headphones from '../../assets/images/headphones.webp'
 import clothes from '../../assets/images/clothes.webp'
 import './home.css'
+import { data, Outlet } from 'react-router'
 
 const Home = () => {
     const [products, setProducts] = useState([])
@@ -14,10 +15,14 @@ const Home = () => {
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
-            .then(data => setProducts(data))
-            .catch(error => console.error('Error:', error)
-            )
+            .then(data => {
+                setProducts(data);
+                localStorage.setItem('productData',JSON.stringify(data)); 
+            })
+            .catch(error => console.error('Error:', error))
+
     }, [])
+
     const heroContent = { pageHeading: 'Welcome to our Store', pageLine: 'Where you can find every product at reasonable price' }
 
 
@@ -35,7 +40,7 @@ const Home = () => {
                     ))
                 }
             </div>
-            <div className='flex-row-wrap align-center m-3-0 productsLibrary'>
+            <div className='flex-row-wrap align-center justify-center m-3-0 productsLibrary'>
                 {
                     products.map((product, index) => (
                         <Card productsData={product} i={index} key={index} />

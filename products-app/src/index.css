@@ -1,8 +1,15 @@
-body {
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body, div#root {
     padding: 0em;
     margin: 0em;
     background-color: var(--white1);
     overflow-x: hidden;
+    position: relative;
+    height: 100%;
 }
 
 * {
@@ -15,6 +22,7 @@ body {
     --white1: rgb(244, 242, 242);
     --bgColor1: rgb(3, 143, 231);
     --bgColor2: rgba(2, 106, 181, 0.741);
+    --bgColor3: rgb(2,59,109);
 }
 
 a {
@@ -275,6 +283,10 @@ a {
     }
 }
 
+.active p {
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgb(164, 163, 163);
+}
 
 
 @media (max-width: 850px) {
@@ -382,10 +394,12 @@ a {
     .personalInfo {
         flex-flow: column-reverse;
         height: 20em !important;
+
         small {
             width: 100% !important;
         }
     }
+
     .dashBoardContent {
         width: 90%;
         margin: 1em auto;
