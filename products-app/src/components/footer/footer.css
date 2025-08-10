@@ -1,15 +1,72 @@
-
 footer {
     background-color: rgb(2, 59, 109);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top: 4em;
+    height: 24em;
     * {
-        text-align: center;
+        color: white;
+    } 
+    li {
+        font-size: 0.9em;
     }
 }
 footer h1.logo {
-    margin: 1em 0em 0em 0em;
     color: white !important;
+}
+.logos {
+    width: 5em;
+    height: 2em;
+    background-color: aqua;
+}
+.navPills {
+    width: 20%;
+    height: 100%;
+    padding: 1em 0em;
+    small {
+        width: 100%;
+        color: white;
+        text-align: left !important;
+    }
+}
+.mainPill {
+    width: 25% !important;
+}
+.mediaIcons {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: yellow;
+}
+@media (max-width: 900px) {
+    footer {
+        flex-flow: column wrap !important;
+        justify-content: space-around !important;
+        align-items: start !important;
+        height: 45em;
+    }
+
+    .navPills  {
+        width: 40% !important;
+        height: 20em;
+        align-items: start;
+        flex-flow: column nowrap;
+        gap: 0em;
+        margin: auto;
+    }
+}
+@media (max-width: 400px)  {
+    footer {
+        height: 75em;
+        gap: 0em  !important;
+        justify-content: start !important;
+    }
+     .navPills  {
+        width: 80% !important;
+        margin: 0em auto;
+        height: 18em;
+        padding: 0em;
+    }
 }
