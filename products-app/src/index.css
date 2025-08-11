@@ -292,9 +292,10 @@ a {
 }
 
 @media (max-width: 900px)  {
-    .productsLibrary {
+    .productsLibrary, .productWindow, .accPage {
         margin-bottom: 40em !important;
     }
+
 }
 @media (max-width: 850px) {
 
@@ -433,7 +434,7 @@ a {
     }
 }
 @media (max-width: 400px)  {
-    .productsLibrary {
+    .productsLibrary, .productWindow, .accPage  {
         margin-bottom: 70em !important;
     }
 }

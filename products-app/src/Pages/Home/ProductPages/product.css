@@ -1,5 +1,6 @@
 .productWindow {
     height: 50em;
+    margin-bottom: 10em;
 }
 
 .imgContainer {
@@ -64,20 +65,29 @@
 
     .productInfo {
         height: 40% !important;
+        .solid {
+            font-size: 0.9em;
+        }
     }
 }
 @media (max-width: 350px) {
+      .mainProductData {
+        flex-flow: column nowrap;
+        height: 100%;
+    }
+
 
     .productInfo {
-        height: 50% !important;
+        height: 80% !important;
         h1 {
             font-size: 1.2em !important;
         }
         p {
             font-size: 0.8em;
+
         }
         .solid {
-            font-size: 0.8em;
+            font-size: 0.6em;
         }
     }
     .productWindow {
