@@ -6,11 +6,11 @@ This is my first project built using React, created during a web development cou
 
 > Routing with React Router: Implemented multiple pages using react-router-dom, including:
 
-  > Home page
+  - Home page
 
-  > Products page
+  - Products page
 
-  > Individual product detail pages
+  - Individual product detail pages
 
 > Fake Data Integration: Used mock product data to simulate a real-world e-commerce experience.
 
