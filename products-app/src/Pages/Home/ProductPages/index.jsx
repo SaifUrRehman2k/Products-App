@@ -5,6 +5,10 @@ import Counter from '../../../components/Counter'
 import Button from '../../../components/button'
 
 const Product = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const params = useParams()
     const [product, setProduct] = useState([])
     useEffect(() => {

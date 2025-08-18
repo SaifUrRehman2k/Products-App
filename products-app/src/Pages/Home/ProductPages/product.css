@@ -1,6 +1,6 @@
 .productWindow {
     height: 50em;
-    margin-bottom: 10em;
+    margin: 0.5em 0em 0em 0em;
 }
 
 .imgContainer {
@@ -46,18 +46,20 @@
 
 @media (max-width: 750px) {
     .productWindow {
-        height: 80em;
+        height: 70em;
+        padding: 0em 0.5em;
     }
 
     .mainProductData {
         flex-flow: column wrap;
-        height: 100%;
+        height: max-content;
     }
 
     .mainProductData .imgContainer {
         height: auto !important;
         width: 100% !important;
-        aspect-ratio: 1/1 !important; 
+        aspect-ratio: 1/1 !important;
+
         img {
             width: 70% !important;
         }
@@ -65,13 +67,16 @@
 
     .productInfo {
         height: 40% !important;
+        gap: 1em;
+
         .solid {
             font-size: 0.9em;
         }
     }
 }
+
 @media (max-width: 350px) {
-      .mainProductData {
+    .mainProductData {
         flex-flow: column nowrap;
         height: 100%;
     }
@@ -79,18 +84,22 @@
 
     .productInfo {
         height: 80% !important;
+
         h1 {
             font-size: 1.2em !important;
         }
+
         p {
             font-size: 0.8em;
 
         }
+
         .solid {
             font-size: 0.6em;
         }
     }
+
     .productWindow {
-        height: 60em;
+        height: 40em;
     }
 }

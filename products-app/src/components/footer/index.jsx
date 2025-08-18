@@ -1,14 +1,19 @@
 import NavLinks from '../Links'
 import './footer.css'
+import Acer from '../../assets/images/acer.png'
+import Addidas from '../../assets/images/addidas.png'
+import Puma from '../../assets/images/puma.png'
+import WD from '../../assets/images/wd.png'
+
 
 const Footer = (props) => {
   return (
     <>
-      <div className='footerLogos'>
-        <div className="logos"></div>
-        <div className="logos"></div>
-        <div className="logos"></div>
-        <div className="logos"></div>
+      <div className='footerLogos flex-row-wrap align-center justify-around'>
+        <div className="logos flex-col-wrap align-center justify-center"><img src={Acer} alt="acerLogo" /></div>
+        <div className="logos flex-col-wrap align-center justify-center"><img src={Addidas} alt="acerLogo" /></div>
+        <div className="logos flex-col-wrap align-center justify-center"><img src={Puma} alt="acerLogo" /></div>
+        <div className="logos flex-col-wrap align-center justify-center"><img src={WD} alt="acerLogo" /></div>
       </div>
       <footer className='flex-row-nowrap align-center justify-center gap-1'>
         <div className='navPills mainPill flex-col-wrap align-start justify-center gap-2'>
