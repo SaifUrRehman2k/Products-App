@@ -2,15 +2,14 @@ import { Link } from 'react-router'
 import Button from '../button'
 import './card.css'
 
-
 const Card = (props) => {
     return (
         <div key={props.i} className='cardVertical flex-col-wrap align-start justify-between  p-0 m-1'>
             <img src={props.productsData.image} alt="" loading='lazy' />
             <div className='productDetails flex-col-wrap align-start justify-start '>
-                <div className='flex-row-nowrap align-center justify-between' style={{width: '100%'}}>
+                <div className='flex-col-wrap align-start justify-between ' style={{width: '100%'}}>
                     <h2 className='m-1-0 elipsis'>{props.productsData.title}  </h2>
-                    <small className='price'>{props.productsData.price}</small> 
+                    <h4 className='price w-100'>${props.productsData.price}</h4> 
                 </div>
                 <p className='m-0 description elipsis'>{props.productsData.description}</p>
             </div>

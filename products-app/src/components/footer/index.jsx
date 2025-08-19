@@ -4,12 +4,16 @@ import Acer from '../../assets/images/acer.png'
 import Addidas from '../../assets/images/addidas.png'
 import Puma from '../../assets/images/puma.png'
 import WD from '../../assets/images/wd.png'
+import GoogleChat from '../../assets/icons/googleChat.svg'
+import Twitter from '../../assets/icons/twitter.svg'
+import Youtube from '../../assets/icons/youtube.svg'
+
 
 
 const Footer = (props) => {
   return (
     <>
-      <div className='footerLogos flex-row-wrap align-center justify-around'>
+      <div className='footerLogos flex-row-wrap align-center justify-center'>
         <div className="logos flex-col-wrap align-center justify-center"><img src={Acer} alt="acerLogo" /></div>
         <div className="logos flex-col-wrap align-center justify-center"><img src={Addidas} alt="acerLogo" /></div>
         <div className="logos flex-col-wrap align-center justify-center"><img src={Puma} alt="acerLogo" /></div>
@@ -22,9 +26,9 @@ const Footer = (props) => {
             <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus molestias minima quas labore atque, quia dolorum nam sit laudantium! Nulla velit rem reiciendis </small>
           </div>
           <ul className='flex-row-nowrap align-start justify-around p-0 gap-1 l-style-none'>
-            <li className='mediaIcons'></li>
-            <li className='mediaIcons'></li>
-            <li className='mediaIcons'></li>
+            <li className='mediaIcons'><img src={GoogleChat} alt="" /></li>
+            <li className='mediaIcons'><img src={Twitter} alt="" /></li>
+            <li className='mediaIcons'><img src={Youtube} alt="" /></li>
           </ul>
         </div>
 

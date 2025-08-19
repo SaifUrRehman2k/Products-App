@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import './product.css'
 import Counter from '../../../components/Counter'
 import Button from '../../../components/button'
+import Star from '../../../assets/icons/star.svg'
 
 const Product = () => {
     useEffect(() => {
@@ -38,7 +39,10 @@ const Product = () => {
                                         <h1>{product.title}</h1>
                                         <p>{product.description}</p>
                                         <b>${product.price}</b> <br />
-                                        <small>{`${product?.rating?.rate} (${product?.rating?.count})`}</small>
+                                        <small className='flex-row-nowrap align-center justify-start m-1-0'>
+                                            <img src={Star} width={'18px'} alt="" />
+                                            {`${product?.rating?.rate} (${product?.rating?.count})`}
+                                        </small>
 
                                     </div>
                                     <Counter />

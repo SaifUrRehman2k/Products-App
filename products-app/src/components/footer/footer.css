@@ -16,7 +16,7 @@ footer h1.logo {
 .footerLogos {
     width: 95%;
     margin: 0em auto;
-    height: 8em;
+    height: 15em;
 }
 .logos {
     width: 25%;
@@ -41,10 +41,14 @@ footer h1.logo {
     width: 25% !important;
 }
 .mediaIcons {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: yellow;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 @media (max-width: 900px) {
     footer {
@@ -66,9 +70,11 @@ footer h1.logo {
 @media (max-width: 400px)  {
     .logos {
         width: 40%;
+        justify-content: space-center !important;
+        align-items: center !important;
     }
     .footerLogos {
-        height: 24em;
+        height: 28em;
     }
     footer {
         height: 75em;

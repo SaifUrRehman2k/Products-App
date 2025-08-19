@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 5em;
+    object-fit: scale-down;
 }
 
 .Fashion {
