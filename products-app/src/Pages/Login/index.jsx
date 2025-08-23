@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../../components/button'
 import Input from '../../components/Input'
 import './login.css'
@@ -6,20 +6,13 @@ import { useNavigate } from 'react-router'
 
 const Login = () => {
     const navigate = useNavigate()
-    const users = [{
-        name: 'john',
-        email: 'john@gmail.com',
-        password: 'admin123'
-    }, {
-        name: 'claud',
-        email: 'claud@gmail.com',
-        password: 'wow25'
-    }, {
-        name: 'saif',
-        email: 'saif@gmail.com',
-        password: 'secret55'
-    }
-    ]
+    const [users, setUsers] = useState([]) 
+    useEffect(()=> {
+        fetch('https://fakestoreapi.com/users')
+        .then(res => res.json())
+        .then(data => setUsers(data))
+        .catch(error => console.log(error))
+    })
     const [emailValue, setEmailValue] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
@@ -52,8 +45,8 @@ const Login = () => {
 
                 <div className='inputs'>
                     {/* <Input type='text' placeHolder='Name' inputID='NAME' inputName='Name' /> */}
-                    <Input type='email' placeHolder='jondoe23@gmailcom' inputID='EMAIL' inputName='E-mail' updatedVal={updateEmailValue} />
-                    <Input type='password' placeHolder='Password' inputID='PASS' inputName='Password' updatedVal={updatePasswordValue} />
+                    <Input type='email' placeHolder='jondoe23@gmailcom' inputID='EMAIL' updatedVal={updateEmailValue} />
+                    <Input type='password' placeHolder='Password' inputID='PASS'  updatedVal={updatePasswordValue} />
                     <a href="#" className='forgetBtn'>Forget password</a>
                 </div>
 

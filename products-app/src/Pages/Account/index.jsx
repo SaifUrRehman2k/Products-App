@@ -2,18 +2,40 @@ import { Outlet, useNavigate } from 'react-router'
 import LeftSideBar from '../../components/LeftSideBar'
 import './account.css'
 import HeroSection from '../../components/HeroSection'
-import { use, useEffect, useState } from 'react'
+import { createContext, use, useEffect, useState } from 'react'
+
+export const UserContext = createContext()
 
 const Account = () => {
   const navigate = useNavigate();
-  let [user, setUser] = useState([])
+  const [user, setUser] = useState(null)
+  const [loading , setLoading] = useState(true)
   useEffect(()=>{
-    localStorage.getItem('user')? setUser(JSON.parse(localStorage.getItem('user'))) : navigate('/login')
+    let storedUser = localStorage.getItem('user')
+    if (storedUser) {
+      try {
+        setUser(JSON.parse(storedUser))
+      } catch (error) {
+        console.log(error);
+        navigate('/login')
+      }
+    } else {
+      navigate('/login')
+    }
+    setLoading(false)
   },[])
+  if (loading) return null
+
+  function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   console.log(user);
   
+  const userName = user?.name?.firstname && user?.name?.lastname ? `${user?.name?.firstname} ${user?.name?.lastname}` : '--- ---'
 
-
+  console.log(userName);
+  
   return (
     <>
 
@@ -23,10 +45,11 @@ const Account = () => {
 
         <div className='accWindow m-1'>
           
-        <h1 className='mainHeading'>Welcome {user.name}</h1>
+        <h1 className='mainHeading'>Welcome {capitalizeFirstLetter(userName)}</h1>
 
-
-          <Outlet/>
+          <UserContext.Provider value={{ user }}>
+            <Outlet />
+          </UserContext.Provider>
         </div>
       </div>
     </>

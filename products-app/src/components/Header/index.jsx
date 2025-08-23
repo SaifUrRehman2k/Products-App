@@ -9,7 +9,7 @@ const Header = (props) => {
   useEffect(() => {
     let user = JSON.parse(localStorage.getItem('user'));
     user ? setAccValue(
-        <p className='loginLink'>{user.name}</p>
+        <p className='loginLink'>{user?.name?.firstname}</p>
       ) : setAccValue(
         <p className='loginLink'>Login</p>
       )

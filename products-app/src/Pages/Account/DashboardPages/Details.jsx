@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from '../../../components/button'
+import Input from '../../../components/Input'
+import { UserContext } from '..'
 
 const Details = () => {
+  const { user } = useContext(UserContext)
+
   return (
     <div className='myDetailsDiv dashBoardContent'>
       <h1>Details</h1>
@@ -13,11 +17,12 @@ const Details = () => {
 
         <div className='flex-col-wrap align-start justify-around gap-1'>
           <div className='flex-row-nowrap align-center justify-around gap-1'>
-            <input type="text" name="firstname" />
-            <input type="text" name="lastname" />
+            <Input type='text' placeHolder={user?.name?.firstname} inputID='firstname' disabled/>
+            <Input type='text' placeHolder={user?.name?.lastname}  inputID='lastname' disabled/>
           </div>
-          <input type="date" name="birthdate" />
-          <input type="number" name="phone" />
+            <Input type='email' placeHolder={user?.email}  inputID='email' disabled/>
+            <Input type='number' placeHolder={user?.phone} inputID='phone' disabled/>
+
           <Button name="Save" btnClass="saveBtn" />
         </div>
 

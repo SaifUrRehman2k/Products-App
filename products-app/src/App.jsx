@@ -39,7 +39,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/login' element={<Login />} />
         <Route path='/myAccount' element={<Account />}>
-          <Route index element={<Details />} />
+          <Route path='/myAccount' element={<Details />} />
           <Route path='my-orders' element={<Orders />} />
           <Route path='my-reviews' element={<Reviews />} />
           <Route path='my-returns' element={<Returns />} />
