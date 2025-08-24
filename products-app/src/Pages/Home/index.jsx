@@ -9,6 +9,9 @@ import './home.css'
 import { data, Outlet } from 'react-router'
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [products, setProducts] = useState([])
     const categories = ['Tech', 'Fashion', 'Jewelry']
 
@@ -17,7 +20,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
-                localStorage.setItem('productData',JSON.stringify(data)); 
+                localStorage.setItem('productData', JSON.stringify(data));
             })
             .catch(error => console.error('Error:', error))
 
@@ -29,7 +32,7 @@ const Home = () => {
 
     return (
         <div>
-            <HeroSection images={[image1, headphones, clothes]} pageHeading={heroContent.pageHeading} pageLine={heroContent.pageLine}/>
+            <HeroSection images={[image1, headphones, clothes]} pageHeading={heroContent.pageHeading} pageLine={heroContent.pageLine} />
 
 
             <h1 className='p-1'>Shop our top categories</h1>

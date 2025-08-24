@@ -17,11 +17,11 @@ const Details = () => {
 
         <div className='flex-col-wrap align-start justify-around gap-1'>
           <div className='flex-row-nowrap align-center justify-around gap-1'>
-            <Input type='text' placeHolder={user?.name?.firstname} inputID='firstname' disabled/>
-            <Input type='text' placeHolder={user?.name?.lastname}  inputID='lastname' disabled/>
+            <Input type='text' placeHolder={user?.name?.firstname} inputID='firstname' disabled />
+            <Input type='text' placeHolder={user?.name?.lastname} inputID='lastname' disabled />
           </div>
-            <Input type='email' placeHolder={user?.email}  inputID='email' disabled/>
-            <Input type='number' placeHolder={user?.phone} inputID='phone' disabled/>
+          <Input type='email' placeHolder={user?.email} inputID='email' disabled />
+          <Input type='number' placeHolder={user?.phone} inputID='phone' disabled />
 
           <Button name="Save" btnClass="saveBtn" />
         </div>
@@ -30,12 +30,12 @@ const Details = () => {
 
       <h3>Secrity</h3>
       <div className="personalInfo flex-row-nowrap align-start justify-around m-2-0 w-100 gap-2 p-2-0">
-        <small style={{width:'40%'}}>
+        <small style={{ width: '40%' }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim commodi laudantium provident quasi voluptatem pariatur nulla illum, totam corrupti placeat aut libero consequuntur architecto? Placeat odio nobis consequatur dignissimos.
         </small>
-        <div style={{width:'60%'}} className='flex-col-wrap align-start justify-around gap-1'>
-          <input type="email" name="email" />
-          <input type="password" name="password" />
+        <div style={{ width: '60%' }} className='flex-col-wrap align-start justify-around gap-1'>
+          <Input type='password' placeHolder={user?.password} inputID='password' disabled />
+          <Input type='address' placeHolder={`${user?.address?.city}, ${user?.address?.street}, ${user?.address?.number}`} inputID='address' disabled />
           <Button name="Save" btnClass="saveBtn" />
         </div>
       </div>

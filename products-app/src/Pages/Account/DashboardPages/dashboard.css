@@ -1,0 +1,8 @@
+.noDataHead, .noDataPara {
+    color: var(--fontColor2);
+    margin: 0%;
+}
+p.noDataPara {
+    margin-bottom: 1em;
+    color: #999898 !important;
+}

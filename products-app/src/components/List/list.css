@@ -1,0 +1,5 @@
+.settingRow {
+    border-radius: 1em;
+    background-color: var(--lightGrey);
+    box-shadow: 2px 2px 5px var(--lightGrey), -1px -1px 5px inset var(--lightGrey);
+}

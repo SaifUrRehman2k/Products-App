@@ -20,6 +20,13 @@ const Product = () => {
 
     useEffect(() => { product ? console.log(product) : console.log('error') })
 
+    const [price, setPrice] = useState(product.price)
+
+    const handleDataFromCounter = (CounterData) => {
+        setPrice(product.price * CounterData)
+        console.log(price);
+        
+    }
     // const Product = product.find(e => e.id == params.id)
     // console.log(Product);
 
@@ -38,14 +45,14 @@ const Product = () => {
                                     <div className='productMainDetails'>
                                         <h1>{product.title}</h1>
                                         <p>{product.description}</p>
-                                        <b>${product.price}</b> <br />
+                                        <b className='prdPrice'><small>$</small>{Math.floor(price)}</b> <br />
                                         <small className='flex-row-nowrap align-center justify-start m-1-0'>
                                             <img src={Star} width={'18px'} alt="" />
                                             {`${product?.rating?.rate} (${product?.rating?.count})`}
                                         </small>
 
                                     </div>
-                                    <Counter />
+                                    <Counter dataToPriceTag={handleDataFromCounter}/>
                                     <Button name='Buy now' btnClass='solid' />
                                 </div>
                             </div>

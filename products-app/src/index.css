@@ -19,10 +19,12 @@ body, div#root {
 :root {
     --fontColor1: rgb(32, 32, 32);
     --fontColor2: rgba(55, 55, 55, 0.933);
+    --lightGrey: rgba(211, 210, 210, 0.933);
     --white1: rgb(244, 242, 242);
     --bgColor1: rgb(3, 143, 231);
     --bgColor2: rgba(2, 106, 181, 0.741);
     --bgColor3: rgb(2,59,109);
+    --hoverColor1: rgba(255, 255, 255, 0.451);
 }
 
 a {
@@ -253,11 +255,12 @@ a {
 
 .mainHeading {
     font-size: 3em;
-    color: var(--fontColor1);
-    background-color: var(--bgColor2);
+    color: var(--white1);
+    background-color: var(--bgColor3);
     padding: 0.5em;
     margin: 0%;
     width: 100%;
+    border-radius: 0.5em;
 }
 
 .d-none {

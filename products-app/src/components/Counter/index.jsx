@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './counter.css'
 
-const Counter = () => {
-    let [count, setCount] = useState(0)
+const Counter = ({ dataToPriceTag }) => {
+    let [count, setCount] = useState(1)
+    dataToPriceTag(count)
+    // useEffect(()=>{
+    //     dataToPriceTag(count)
+    // },[count])
     return (
         <>
             <div className='flex-row-nowrap '>
-                <button onClick={()=> setCount(++count)}>+</button>
-                <input type="number" name="counter" id="counter" disabled placeholder={count}/>
-                <button onClick={()=> setCount(--count)}>-</button>
+                <button className='addSubBtns' onClick={() => {
+                    setCount(++count)
+                    dataToPriceTag(count)
+                }}>+</button>
+                <div id="counter" > {count}</div>
+                <button className='addSubBtns' disabled={count == 1} onClick={() => {
+                    setCount(--count)
+                    dataToPriceTag(count)
+                }}>-</button>
             </div>
         </>
     )

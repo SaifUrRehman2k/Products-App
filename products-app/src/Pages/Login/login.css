@@ -24,12 +24,9 @@
   font-size: 0.6em;
   align-self: flex-end;
 }
-.btns {
-  width: 60%;
+.login {
+  width: 70%;
   margin: 0em auto;
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 1em;
 }
 .inputs {
   margin: 0em auto 2em auto;

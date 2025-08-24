@@ -1,28 +1,30 @@
 import React from 'react'
+import Switch from '../Switch'
+import './list.css'
 
 const List = () => {
   return (
     <>
-      <ul className='l-style-none p-0'>
-        <li className='flex-row-nowrap align-center justify-between p-1'>
+      <ul className='l-style-none p-0 flex-col-wrap gap-1 '>
+        <li className='settingRow flex-row-nowrap align-center w-100 justify-between p-0-1'>
             <p>Example</p>
-            <small>On</small>
+            <Switch/>
         </li>
-        <li className='flex-row-nowrap align-center justify-between p-1'>
+        <li className='settingRow flex-row-nowrap align-center w-100 justify-between p-0-1'>
             <p>Example</p>
-            <small>On</small>
+            <Switch/>
         </li>
-        <li className='flex-row-nowrap align-center justify-between p-1'>
+        <li className='settingRow flex-row-nowrap align-center w-100 justify-between p-0-1'>
             <p>Example</p>
-            <small>On</small>
+            <Switch/>
         </li>
-        <li className='flex-row-nowrap align-center justify-between p-1'>
+        <li className='settingRow flex-row-nowrap align-center w-100 justify-between p-0-1'>
             <p>Example</p>
-            <small>On</small>
+            <Switch/>
         </li>
-        <li className='flex-row-nowrap align-center justify-between p-1'>
+        <li className='settingRow flex-row-nowrap align-center w-100 justify-between p-0-1'>
             <p>Example</p>
-            <small>On</small>
+            <Switch/>
         </li>
       </ul>
     </>

@@ -14,7 +14,7 @@
 .mainProductData {
     display: flex;
     flex-direction: row;
-    height: 70%;
+    height: 90%;
 }
 
 
@@ -30,7 +30,7 @@
 .productMainDetails {
     p {
         font-size: 0.8em;
-        color: var(--fontColor1);
+        color: var(--fontColor2) !important;
     }
 
     b {
@@ -42,6 +42,9 @@
         font-size: 0.7em;
         color: var(--fontColor2);
     }
+}
+.prdPrice {
+    font-size: 1.8em !important;
 }
 
 @media (max-width: 750px) {

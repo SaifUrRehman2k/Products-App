@@ -1,4 +1,16 @@
-input[id="counter"] {
+#counter{
     display: block;
-    width: 3em;
+    padding: 0.2em;
+    width: 2em;
+    color: black !important;
+    background-color: var(--lightGrey);
+}
+.addSubBtns {
+    width: 2em;
+    background-color: var(--white1);
+    border: 1px solid var(--lightGrey);
+    padding: 0.2em;
+}
+.addSubBtns:active {
+    background-color: var(--lightGrey);
 }

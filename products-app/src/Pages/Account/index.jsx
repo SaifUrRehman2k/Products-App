@@ -39,7 +39,7 @@ const Account = () => {
   return (
     <>
 
-      <div className='accPage flex-row-nowrap align-center justify-around gap-1 m-1-0  w-100'>
+      <div className='accPage flex-row-nowrap align-center justify-around gap-1 m-0  w-100'>
         <LeftSideBar/>
 
 

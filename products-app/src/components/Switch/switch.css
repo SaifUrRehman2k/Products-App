@@ -1,0 +1,37 @@
+.switchBody {
+    width: 32px;
+    height: 16px;
+    background-color: gray;
+    padding: 3px 2px;
+    border-radius: 1em;
+    position: relative;
+    transition: 200ms all linear;
+}
+
+.switchBall {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgb(249, 249, 249);
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    transition: 200ms all linear;
+
+}
+
+.switchBody:hover {
+    background-color: var(--fontColor2);
+
+    .switchBall {
+        background-color: var(--white1);
+    }
+}
+
+.switchOn {
+    background-color: var(--bgColor2) !important;
+    .switchBall {
+        left: 55%;
+
+    }
+}

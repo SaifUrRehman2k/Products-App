@@ -34,6 +34,7 @@
 .buyNow {
     border: 1px solid rgb(2, 59, 109);
     border-radius: 1.5em;
+    font-size: small;
 }
 
 .buyNow:hover {

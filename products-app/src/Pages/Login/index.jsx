@@ -50,10 +50,8 @@ const Login = () => {
                     <a href="#" className='forgetBtn'>Forget password</a>
                 </div>
 
-                <div className='btns'>
                     <Button name='Login' btnClass='login' btnFucntiion={validateLogin} />
                     {/* <Button title='Create account' btnClass='holo' /> */}
-                </div>
                 <div className='messageArea'>{message}</div>
 
                 {/* {isVerified !== null && (
