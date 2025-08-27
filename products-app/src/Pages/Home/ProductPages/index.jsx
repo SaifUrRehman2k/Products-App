@@ -25,7 +25,7 @@ const Product = () => {
     const handleDataFromCounter = (CounterData) => {
         setPrice(product.price * CounterData)
         console.log(price);
-        
+
     }
     // const Product = product.find(e => e.id == params.id)
     // console.log(Product);
@@ -42,7 +42,7 @@ const Product = () => {
                                     <img src={product.image} alt="ProductImage" />
                                 </div>
                                 <div className='productInfo flex-col-wrap align-start justify-around'>
-                                    <div className='productMainDetails'>
+                                    <div className='productMainDetails flex-col-wrap align-start justify-start gap-1'>
                                         <h1>{product.title}</h1>
                                         <p>{product.description}</p>
                                         <b className='prdPrice'><small>$</small>{Math.floor(price)}</b> <br />
@@ -50,9 +50,9 @@ const Product = () => {
                                             <img src={Star} width={'18px'} alt="" />
                                             {`${product?.rating?.rate} (${product?.rating?.count})`}
                                         </small>
+                                        <Counter dataToPriceTag={handleDataFromCounter} />
 
                                     </div>
-                                    <Counter dataToPriceTag={handleDataFromCounter}/>
                                     <Button name='Buy now' btnClass='solid' />
                                 </div>
                             </div>

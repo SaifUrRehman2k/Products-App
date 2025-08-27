@@ -69,13 +69,27 @@ div.leftSideBarToggle {
     padding: 0.2em;
     position: absolute;
     left: 13em;
-    top: 10em;
-    background-color: var(--bgColor1);
-    border-top-right-radius: 0.4em;
+    top: 0em;
+    background-color: var(--bgColor3);
     border-bottom-right-radius: 0.4em;
 
     svg.iconLink {
         padding: 0em;
         fill: rgb(219, 216, 216);
+    }
+}
+
+@media (max-width: 900px) {
+    .LeftSideBar {
+        margin-left: 0%;
+        border-top-left-radius: 0em;
+        width: 40% !important;
+    }
+}
+@media (max-width: 600px) {
+    .LeftSideBar {
+        width: 13em !important;
+        border-top-right-radius: 0em;
+
     }
 }

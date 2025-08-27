@@ -5,3 +5,20 @@
 .accPage {
     height: 60em;
 }
+.mainHeading {
+    font-family: gowun;
+}
+
+@media (max-width:850px) {
+    .personalInfo {
+        margin: 0;
+        padding-top: 1em;
+        height: max-content !important;
+        flex-flow: row wrap !important;
+        justify-content: start;
+        align-items: center;
+        small,div {
+            width: 100% !important;
+        }
+    }
+}

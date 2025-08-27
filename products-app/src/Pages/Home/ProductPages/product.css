@@ -24,10 +24,12 @@
 }
 
 .productInfo {
-    height: 100% !important;
+    align-self: flex-start;
+    height: 70% !important;
 }
 
 .productMainDetails {
+    height: 90%;
     p {
         font-size: 0.8em;
         color: var(--fontColor2) !important;

@@ -1,9 +1,32 @@
+:root {
+    --fontColor1: rgb(32, 32, 32);
+    --fontColor2: rgba(55, 55, 55, 0.933);
+    --lightGrey: rgba(211, 210, 210, 0.933);
+    --white1: rgb(244, 242, 242);
+    --bgColor1: rgb(3, 143, 231);
+    --bgColor2: rgba(2, 106, 181, 0.741);
+    --bgColor3: rgb(2, 59, 109);
+    --hoverColor1: rgba(255, 255, 255, 0.451);
+}
+
+@font-face {
+    font-family: gowun;
+    src: url(./assets/fonts/Gowun_Dodum/GowunDodum-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kantumruy;
+    src: url(./assets/fonts/Kantumruy_Pro/static/KantumruyPro-Medium.ttf);
+}
+
+
 html {
     margin: 0;
     padding: 0;
 }
 
-body, div#root {
+body,
+div#root {
     padding: 0em;
     margin: 0em;
     background-color: var(--white1);
@@ -12,20 +35,25 @@ body, div#root {
     height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: gowun !important;
+}
+
+p,
+a,
+li,
+small {
+    font-family: Kantumruy !important;
+}
+
 * {
     box-sizing: border-box;
 }
 
-:root {
-    --fontColor1: rgb(32, 32, 32);
-    --fontColor2: rgba(55, 55, 55, 0.933);
-    --lightGrey: rgba(211, 210, 210, 0.933);
-    --white1: rgb(244, 242, 242);
-    --bgColor1: rgb(3, 143, 231);
-    --bgColor2: rgba(2, 106, 181, 0.741);
-    --bgColor3: rgb(2,59,109);
-    --hoverColor1: rgba(255, 255, 255, 0.451);
-}
+
 
 a {
     text-decoration: none;
@@ -101,6 +129,7 @@ a {
 .justify-start {
     justify-content: start;
 }
+
 .justify-end {
     justify-content: end;
 }
@@ -340,11 +369,13 @@ a {
 
 @media (max-width: 600px) {
     .categories {
-        flex-flow: column wrap;
+        flex-flow: row nowrap;
         justify-content: space-around;
+        justify-content: center;
+        gap: 0;
 
         .CategoryCard {
-            width: 80%;
+            width: 30%;
         }
     }
 
@@ -414,6 +445,16 @@ a {
 @media (max-width: 500px) {
     * {
         box-sizing: border-box !important;
+    }
+
+    .categories {
+        height: 10em;
+        .CategoryCard {
+            height: 100%;
+            button {
+                display: none;
+            }
+        }
     }
 
     .cardVertical .btns .buyNow {

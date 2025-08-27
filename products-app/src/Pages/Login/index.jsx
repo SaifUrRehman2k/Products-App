@@ -32,6 +32,7 @@ const Login = () => {
         if (userFound) {
             setMessage(<p className='success message'>Login Successful</p>) 
             localStorage.setItem('user', JSON.stringify(userFound))
+            window.dispatchEvent(new Event('userLogin'));
             setTimeout(navigate('/myAccount'), 1000)
         } else {
             setMessage(<p className='error message'>Login Failed, Please check the Email and Password</p>)
