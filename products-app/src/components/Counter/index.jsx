@@ -4,9 +4,7 @@ import './counter.css'
 const Counter = ({ dataToPriceTag }) => {
     let [count, setCount] = useState(1)
     dataToPriceTag(count)
-    // useEffect(()=>{
-    //     dataToPriceTag(count)
-    // },[count])
+
     return (
         <>
             <div className='flex-row-nowrap '>

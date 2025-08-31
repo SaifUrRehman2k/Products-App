@@ -17,7 +17,6 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
 
-    // const pass = 'admin'
 
     const updateEmailValue = (e) => {
         setEmailValue(e.target.value)
@@ -55,9 +54,6 @@ const Login = () => {
                     {/* <Button title='Create account' btnClass='holo' /> */}
                 <div className='messageArea'>{message}</div>
 
-                {/* {isVerified !== null && (
-          <p>{isVerified ? 'Verified' : 'not Verified'} </p>
-        )} */}
 
 
             </div>

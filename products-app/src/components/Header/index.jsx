@@ -9,7 +9,6 @@ const Header = (props) => {
   useEffect(() => {
     const updateUser = () => {
       const user = JSON.parse(localStorage.getItem('user'));
-      // let headerName = user== null ? 'Login' : user?.name?.firstname
       setAccValue(user ? user?.name?.firstname : null)
     }
 

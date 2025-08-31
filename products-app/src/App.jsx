@@ -14,6 +14,7 @@ import Returns from './Pages/Account/DashboardPages/Returns.jsx'
 import Settings from './Pages/Account/DashboardPages/Settings.jsx'
 import Product from './Pages/Home/ProductPages/index.jsx'
 import Login from './Pages/Login/index.jsx'
+import NotFound from './Pages/Page404/index.jsx'
 
 function App() {
   const [accValue, setAccValue] = useState()
@@ -33,6 +34,7 @@ function App() {
       <Header logo='DealKart' accValue={accValue} />
 
       <Routes>
+        <Route path='*' element={<NotFound/>}/>
         <Route index element={<Home />} />
         <Route path='product/:id' element={<Product />} />
         <Route path='/cart' element={<Cart />} />
@@ -45,8 +47,6 @@ function App() {
           <Route path='my-returns' element={<Returns />} />
           <Route path='settings' element={<Settings />} />
         </Route>
-        <Route path='' />
-
       </Routes>
 
       <Footer logo='DealKart' />
