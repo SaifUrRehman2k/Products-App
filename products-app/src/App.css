@@ -2,23 +2,29 @@
     height: 16em;
     border-top: 1px solid rgba(106, 105, 105, 0.733);
 }
-.myDetailsDiv  {
+
+.myDetailsDiv {
     height: 50em !important;
 }
+
 .accWindow {
     align-self: flex-start;
 }
+
 .personalInfo small {
     font-size: 0.7em;
     color: var(--fontColor2);
     line-height: 1.8em;
 }
-.accPage{
+
+.accPage {
     gap: 0em;
+
     div.leftSideBarToggle {
         align-self: start;
     }
-} 
+}
+
 .login {
     display: inline-block;
     width: 100%;
@@ -26,11 +32,14 @@
     margin: 0em auto;
     color: rgb(238, 236, 236);
 }
-.buyNow, .cart{
+
+.buyNow,
+.cart {
     padding: 0.4em;
     border: none;
     outline: none;
 }
+
 .buyNow {
     border: 1px solid rgb(2, 59, 109);
     border-radius: 1.5em;
@@ -44,6 +53,7 @@
 
 
 }
+
 .saveBtn {
     background-color: var(--bgColor1);
     padding: 0.5em 1em;
@@ -51,22 +61,26 @@
     border: none;
     border-radius: 0.2em;
 }
+
 .saveBtn:hover {
     background-color: var(--bgColor2);
     cursor: pointer;
 }
+
 .cart {
     width: 20%;
     color: black;
     display: flex;
     height: 100%;
 }
+
 .cart:hover {
     svg {
         fill: rgb(86, 86, 86) !important;
         cursor: pointer;
     }
 }
+
 .solid {
     background-color: var(--bgColor3);
     padding: 0.5em 1em;
@@ -75,6 +89,7 @@
     border-radius: 2em;
     border: none;
 }
+
 .solid:hover {
     background-color: var(--bgColor2);
     cursor: pointer;
@@ -85,4 +100,48 @@
     small {
         width: 40% !important;
     }
+}
+
+#Cart {
+    width: 22em;
+    height: 100vh !important;
+    background-color: var(--white1);
+    box-shadow: -4px 0px 8px var(--lightGrey);
+    position: fixed;
+    top: 0em;
+    z-index: 999;
+    transition: all 0.5s cubic-bezier(0.41, 0.08, 0.92, 0.65);
+}
+
+span.delete  {
+    font-size: 0.7em;
+    align-self: flex-end;
+    padding: 4px;
+
+}
+span.delete:hover {
+    background-color: var(--hoverColor1);
+    cursor: pointer;
+}
+
+.closeBtn {
+    fill: var(--fontColor2);
+    left: 0.8em;
+    top: 1em;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+.displayCart-0 {
+    right: -24em !important;
+}
+
+.displayCart-1 {
+    right: 0em !important;
+}
+
+#addToCart:hover {
+    background-color: var(--lightGrey);
 }

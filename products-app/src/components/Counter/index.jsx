@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import './counter.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { decrement, increment } from '../../App/Slices/counterSlice'
 
 const Counter = ({ dataToPriceTag }) => {
-    let [count, setCount] = useState(1)
-    dataToPriceTag(count)
+    let count = useSelector((state)=> state.counter.value)
+    const dispatch = useDispatch()
+    dataToPriceTag(count == 0 ? count++ : count)
 
     return (
         <>
             <div className='flex-row-nowrap '>
                 <button className='addSubBtns' onClick={() => {
-                    setCount(++count)
-                    dataToPriceTag(count)
+                    dispatch(increment())
                 }}>+</button>
                 <div id="counter" > {count}</div>
                 <button className='addSubBtns' disabled={count == 1} onClick={() => {
-                    setCount(--count)
-                    dataToPriceTag(count)
+                    dispatch(decrement())
                 }}>-</button>
             </div>
         </>

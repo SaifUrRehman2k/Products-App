@@ -1,0 +1,22 @@
+.cartProducts {
+    height: max-content;
+    margin-top: 3em;
+}
+.cartItem {
+    height: 5.5em !important;
+    width: 20em !important;
+    background-color: rgba(212, 209, 209, 0.749) !important;
+    padding: 0.4em;
+    border-radius: 1em;
+    img {
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+    h4 {
+        width: 100%;
+        font-size: 1em;
+        white-space : nowrap;
+        overflow: hidden !important;
+        text-overflow :ellipsis  !important;
+    }
+}

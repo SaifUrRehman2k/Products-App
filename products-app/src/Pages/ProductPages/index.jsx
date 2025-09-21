@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import './product.css'
-import Counter from '../../../components/Counter'
-import Button from '../../../components/button'
-import Star from '../../../assets/icons/star.svg'
+import Counter from '../../components/Counter'
+import Button from '../../components/button'
+import Star from '../../assets/icons/star.svg'
 
 const Product = () => {
     useEffect(() => {
